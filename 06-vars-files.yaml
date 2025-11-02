@@ -1,6 +1,6 @@
 - name: variables from files
   hosts: local
-  connecton: local
+  connection: local
   vars_files: #here we can ant number of files
   - course.yaml
   tasks:
