@@ -12,6 +12,6 @@
   tasks:
   - name: testing variables preference
     vars:
-    NAME: from play level
+      NAME: from play level
     ansible.builtin.debug:
       msg: "Name: {{ NAME }}"
