@@ -3,8 +3,8 @@
   connection: local
   vars:
     NAME: from play level
-  vars_files:
-  - course.yaml
+  # vars_files:
+  # - course.yaml
   vars_prompt:
   - name: NAME
     prompt: what is your NAME?
@@ -17,5 +17,7 @@
       msg: "Name: {{ NAME }}"
 
       #1st preference is from arguments or command lines
-      #2nd preferenc e is from prompt
+      #2nd preferenc e is from promt
+      #3rd preference is for files
+      
 
