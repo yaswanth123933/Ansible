@@ -5,10 +5,10 @@
     NAME: from play level
   # vars_files:
   # - course.yaml
-  vars_prompt:
-  - name: NAME
-    prompt: what is your NAME?
-    private: true 
+  # vars_prompt:
+  # - name: NAME
+  #   prompt: what is your NAME?
+  #   private: true 
   tasks:
   - name: testing variables preference
     # vars:
@@ -19,5 +19,6 @@
       #1st preference is from arguments or command lines
       #2nd preferenc e is from promt
       #3rd preference is for files
-      
+      #4th preference is for prompt
+
 
