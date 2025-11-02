@@ -4,8 +4,11 @@
   vars_prompt:
   - name: username
     prompt: what is your username?
-    private: false
+    private: false #user name is visible
+  - name: password
+    prompt: what is your password?
+    private: true # password can not be seen
   tasks:
   - name: print credentials
     ansible.builtin.debug:
-      msg: "Hello,username is: {{ username }}"
+      msg: "Hello,username is: {{ username }}, password is: {{ password }}"
