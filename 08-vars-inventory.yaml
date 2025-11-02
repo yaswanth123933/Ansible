@@ -1,8 +1,6 @@
 - name: variables from files
   hosts: local
   connection: local
-  vars_files: #here we can andd number of files
-  - course.yaml
   tasks:
   - name: print course info
     ansible.builtin.debug:
