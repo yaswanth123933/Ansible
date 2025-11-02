@@ -1,0 +1,15 @@
+- name: play level variables
+  hosts: local
+  connection: local #ansible is connecting to local host
+  vars:
+    COURSE: DevOps with AWS
+    DURATION: 10hrs
+    TRAINER: sivakumar
+  tasks:
+  - name: print the course info
+    vars:
+      COURSE: Ansible
+    ansible.builtin.debug:
+      msg: "Course Name is: {{ COURSE }}, Duration: {{ DURATION }}, TRAINER: {{ TRAINER }}"
+
+#this is called overridding
