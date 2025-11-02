@@ -1,4 +1,4 @@
-- name: variables fromm files
+- name: variables from files
   hosts: local
   connecton: local
   vars_files: #here we can ant number of files
