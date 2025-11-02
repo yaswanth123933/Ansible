@@ -11,7 +11,11 @@
     private: true 
   tasks:
   - name: testing variables preference
-    vars:
-      NAME: from play level
+    # vars:
+    #   NAME: from play level
     ansible.builtin.debug:
       msg: "Name: {{ NAME }}"
+
+      #1st preference is from arguments or command lines
+      #2nd preferenc e is from prompt
+
