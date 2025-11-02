@@ -12,4 +12,4 @@
     ansible.builtin.debug:
       msg: "Course Name is: {{ COURSE }}, Duration: {{ DURATION }}, TRAINER: {{ TRAINER }}"
 
-#this is called overridding
+#this is called overridding i.e it s prints the ansible 

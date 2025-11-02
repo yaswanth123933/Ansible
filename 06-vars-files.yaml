@@ -1,0 +1,9 @@
+- name: variables fromm files
+  hosts: local
+  connecton: local
+  vars_files: #here we can ant number of files
+  - course.yaml
+  tasks:
+  - name: print course info
+    ansible.builtin.debug:
+      msg: "Course Name is: {{ COURSE }}, Duration: {{ DURATION }}, TRAINER: {{ TRAINER }}"
