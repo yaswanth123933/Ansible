@@ -17,9 +17,10 @@
       msg: "Name: {{ NAME }}"
 
       #1st preference is from arguments or command lines
-      #2nd preferenc e is from promt
+      #2nd preferenc e is from task
       #3rd preference is for files
       #4th preference is for prompt
       #5th preference is for play level
+      #6th preference is for inventory
 
 
