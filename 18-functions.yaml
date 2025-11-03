@@ -3,6 +3,7 @@
   connection: local
   vars:
     technologies: DevOps ,linux ,shell ,Ansible #string
+    name: "Yaswanth"
     # diictionary = map
     tags:
       Application: payment
@@ -40,6 +41,10 @@
       msg: "json: {{ student_yaml | to_json }}"
 
   - name: save json to file
-    ansible.builtin.debug:
+    ansible.builtin.copy:
       dest: ./student-data.json
       content: "{{ student_yaml | to_nice_json }}"
+
+  - name: convert uppercase
+    ansible.builtin.debug:
+      msg: "{{ name | upper }}"
