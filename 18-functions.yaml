@@ -3,14 +3,20 @@
   connection: local
   vars:
     technologies: DevOps ,linux ,shell ,Ansible #string
-    # diictionary
+    # diictionary = map
     tags:
       Application: payment
       Environment: dev
+    #list
+    listTags:
+    - key: Application
+      value: payment
+    - key: Environment
+      value: dev
   tasks:
   - name: default variable
     ansible.builtin.debug:
-    msg: "hello, {{ name | default('Ramesh') }}"
+    msg: "Hello, {{ name | default('Ramesh') }}"
 
   #string to list
   - name: convert string to list 
@@ -20,3 +26,7 @@
   - name: convert map to list 
     ansible.builtin.debug:
       msg: "Tags are: {{ tags | dict2items }}"
+
+  - name: convert list into map
+    ansible.builtin.debug:
+      msg: "tag map: {{ listTags | item2dict }}"
