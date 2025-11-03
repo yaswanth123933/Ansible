@@ -5,7 +5,7 @@
     technologies: DevOps ,linux ,shell ,Ansible #string
     name: "Yaswanth"
     gmail: info@GMAIL.COM
-    ipaddress: 192.168.0.1
+    ipaddress: "192.168.0.1"
     # diictionary = map
     tags:
       Application: payment
